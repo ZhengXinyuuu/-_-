@@ -12,7 +12,7 @@ const upgradeGifts=[
 ];
 const birthdayDays=[1,1,2,3,4,5,7,10,15,20];
 const birthdayGrowth=[20,30,50,80,100,120,150,200,300,400];
-document.querySelector('#benefit-rows').innerHTML=spaces.map((space,i)=>`<tr><td><img src="assets/frame100-svip-${i+1}.png" alt="SVIP${i+1}" width="63" height="22"></td><td>${space}TB</td><td>${transfers[i]}</td><td>${recycleDays[i]}天</td><td>${downloadTB[i]}TB/月</td><td>${i<6?'有':`SVIP${i+1}专属`}</td><td>${upgradeGifts[i]}</td><td>${birthdayDays[i]}天超级会员<br>${birthdayGrowth[i]}点成长值</td></tr>`).join('');
+document.querySelector('#benefit-rows').innerHTML=spaces.map((space,i)=>`<tr><td><img src="assets/frame100-svip-${i+1}.webp" alt="SVIP${i+1}" width="63" height="22"></td><td>${space}TB</td><td>${transfers[i]}</td><td>${recycleDays[i]}天</td><td>${downloadTB[i]}TB/月</td><td>${i<6?'有':`SVIP${i+1}专属`}</td><td>${upgradeGifts[i]}</td><td>${birthdayDays[i]}天超级会员<br>${birthdayGrowth[i]}点成长值</td></tr>`).join('');
 const benefitScroller=document.querySelector('.benefit-clip');
 benefitScroller.addEventListener('scroll',()=>{
   const remaining=benefitScroller.scrollWidth-benefitScroller.clientWidth-benefitScroller.scrollLeft;
