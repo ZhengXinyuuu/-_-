@@ -162,3 +162,6 @@ body{height:100vh;overflow:hidden}
 .badge-shine::before,.growth-value-shine::before{animation-delay:800ms}
 .badge-shine::before,.growth-value-shine::before{animation-delay:650ms}
 .growth-value-shine::before{filter:url(#growth-cream-shine)}
+/* Headerless 390 × 756 viewport. */
+.phone{width:390px;height:756px}
+.scroll-content{top:0}

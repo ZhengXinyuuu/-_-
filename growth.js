@@ -42,5 +42,6 @@ benefitScroller.addEventListener('pointerup',endTableDrag);
 benefitScroller.addEventListener('pointercancel',endTableDrag);
 benefitScroller.addEventListener('lostpointercapture',endTableDrag);
 benefitScroller.addEventListener('dragstart',event=>event.preventDefault());
-document.querySelector('#back').addEventListener('click',()=>{if(history.length>1)history.back();else location.href='me.html'});
+
+
 
