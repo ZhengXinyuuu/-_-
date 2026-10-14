@@ -1,0 +1,12 @@
+/* The scene fades independently; system chrome remains above every stage. */
+.intro{position:fixed;inset:0;z-index:1000;overflow:hidden;container-type:inline-size;pointer-events:none}
+.intro-scene,.intro-frame,.intro-veil{position:absolute;inset:0;width:100%;height:100%}
+.intro-scene,.intro-veil{background:#fff}
+.intro-frame{border:0;pointer-events:none}
+.intro canvas{position:absolute;width:100%;height:100%;inset:0}
+.intro-chrome{position:absolute;inset:0;pointer-events:none}
+.intro-chrome .capsule{background:transparent}
+.intro-indicator{position:absolute;bottom:.89%;left:36.54%;width:26.92%;height:3px;border-radius:9px;background:#333}
+html.intro-running,html.intro-running body{overflow:hidden}
+html.intro-running .phone>.status,html.intro-running .phone>.capsule{visibility:hidden}
+@media(min-width:601px){.intro{width:min(100vw,780px);left:50%;right:auto;transform:translateX(-50%)}}

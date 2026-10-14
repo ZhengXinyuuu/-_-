@@ -1,0 +1,164 @@
+@font-face{font-family:"PingFang SC";src:url("assets/PingFangSC-Semibold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap}*{box-sizing:border-box}html,body{margin:0}body{background:#ededed;color:#333;font-family:Arial,"Microsoft YaHei",sans-serif;display:flex;justify-content:center;min-height:100vh}button{font:inherit;cursor:pointer;border:0}button:focus-visible,.scroll-content:focus-visible{outline:2px solid #986b9c;outline-offset:-2px}.phone{width:390px;height:844px;flex:none;position:relative;background:#fff;overflow:hidden}.fixed-top{height:88px;position:absolute;inset:0 0 auto;background:white;z-index:5}.status{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 18px 4px 29px}.status b{flex:none;font-family:"PingFang SC",sans-serif;font-size:16px;font-weight:600;line-height:22px;letter-spacing:0}.status-icons{display:flex;align-items:center;gap:8px;flex:none;width:84px;height:14px}.status .status-icons svg{display:block;flex:none;height:14px;overflow:visible}.status .signal{width:20px}.status .wifi{width:20px}.status .battery{width:28px}.titlebar{height:44px;position:relative;display:flex;align-items:center;justify-content:center}.titlebar h1{font-family:"PingFang SC",sans-serif;font-size:16px;font-weight:600;margin:0}.titlebar button{position:absolute;left:21px;width:30px;height:36px;background:none;padding:8px}.titlebar svg{height:19px;width:11px;fill:none;stroke:#606060;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}.scroll-content{position:absolute;top:88px;bottom:0;left:0;width:390px;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;overscroll-behavior:contain}.scroll-content::-webkit-scrollbar{display:none}.hero{background:#150f18}.hero>img{display:block;width:390px;height:294px}.upgrade{height:66px;display:flex;align-items:flex-start;justify-content:space-between;padding:13px 20px 0 21px;background:linear-gradient(110deg,#2c2035,#0e0b0f);border-radius:12px 12px 0 0}.upgrade p{font-size:12px;color:#9a929e;margin:7px 0 0}.upgrade strong{font-weight:500;color:#ffe0e6}.upgrade button{width:86px;height:29px;border-radius:20px;color:#59406b;font-size:14px;font-weight:600;background:linear-gradient(110deg,#fff1f8,#ffe0e3)}.rules{position:relative;margin-top:-12px;background:#fff;border-radius:12px 12px 0 0;padding:17px 20px 39px 21px}h2{font-size:16px;line-height:23px;margin:0;font-weight:600}.formula{height:132px;margin-top:11px;background:#f9f9f9;border-radius:8px;padding:10px 9px;text-align:center}.formula p{font-size:12px;text-align:left;margin:0;padding:2px 3px 10px;border-bottom:1px solid #f1f1f1;line-height:16px}.formula div{font-size:16px;font-weight:600;line-height:27px;margin-top:6px;white-space:nowrap}.formula small{display:block;margin-top:9px;color:#9599a3;font-size:12px}.obtain-title{margin-top:20px}.acquisition{margin-top:15px;border:1px solid #f1f1f1;border-radius:8px;overflow:hidden;width:350px;margin-left:-1px}table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:12px;color:#888}th{font-weight:500;color:#333;background:#f9f9f9}td,th{text-align:center;border-right:1px solid #f1f1f1;border-bottom:1px solid #f1f1f1;height:33px;padding:0;white-space:nowrap}tr:last-child td{border-bottom:0}td:last-child,th:last-child{border-right:0}.acquisition th[rowspan]{background:#f2f2f2}.benefits-title{margin-top:19px}.benefit-clip{margin-top:12px;border:1px solid #f1f1f1;border-radius:8px;width:369px;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;position:relative}.benefit-clip::-webkit-scrollbar{display:none}.benefit-clip:focus-visible{outline:2px solid #986b9c;outline-offset:-2px}.benefits{width:946px;border-collapse:separate;border-spacing:0}.benefits th{width:123px}.benefits th:first-child{width:85px}.benefits th:first-child,.benefits td:first-child{position:sticky;left:0;z-index:2;background:#fff}.benefits th:first-child{background:#f9f9f9;z-index:3}.benefits tbody tr:nth-child(even) td:first-child{background:#f9f9f9}.benefits td{line-height:17px;border-bottom:0}.benefits td{height:65px}.benefits tbody tr:nth-child(even){background:#f9f9f9}.benefits td img{display:block;width:63px;height:22px;object-fit:contain;margin:auto}.notes{margin-top:15px;color:#9599a3;font-size:12px;line-height:21px}.notes p{margin:0 0 5px}.notes p:nth-child(3){margin-top:10px}.privileges{padding:0;background:transparent;color:#ff4b53;font-size:12px;line-height:21px}.privileges span{font-size:20px;vertical-align:-1px}.more{display:block;margin:12px auto 0;border:1px solid #ccc;border-radius:20px;background:white;color:#9599a3;width:93px;height:33px;font-size:12px}.more span{font-size:20px;vertical-align:-1px}dialog{width:340px;border:0;border-radius:15px;padding:25px;color:#333;max-height:650px;overflow:auto}dialog::backdrop{background:#0007}dialog h2{padding-right:20px}dialog p{font-size:14px;line-height:1.8}.close{position:absolute;right:12px;top:8px;background:none;font-size:25px;color:#888}
+
+.benefit-clip{cursor:grab;touch-action:pan-x pan-y}.benefit-clip.dragging{cursor:grabbing;user-select:none}.benefits img{-webkit-user-drag:none;user-select:none}
+
+.benefit-clip.at-end{width:calc(100% - 1px)}
+/* Frame 100: warm gold SVIP8 theme and fixed 390 × 844 viewport. */
+body{height:100vh;overflow:hidden}
+.status{padding-left:50px;padding-right:35px}
+.status-icons{width:75px;gap:7px}
+.status .signal{width:18px;height:12px}
+.status .wifi{width:18px;height:12px}
+.status .battery{width:25px;height:12px}
+.titlebar button{left:24px}
+.hero{background:#30231a}
+.upgrade{background:linear-gradient(110deg,#2d170b,#281f19)}
+.upgrade p{color:#958b83}
+.upgrade strong{color:#f9e5c5}
+.upgrade button{color:#48382b;background:linear-gradient(110deg,#fff5e3,#ffedcf)}
+/* Requested typography refinements. */
+@font-face{font-family:"PingFang SC";src:url("assets/PingFangSC-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+.upgrade button{font-family:"PingFang SC",sans-serif;font-size:14px;font-weight:500}
+.upgrade button span{background:linear-gradient(90deg,#513F30 0%,#241A15 50%,#513F30 100%);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.rules>h2{font-family:"PingFang SC",sans-serif;font-size:16px;font-weight:500}
+.formula div{font-family:"PingFang SC",sans-serif;font-size:16px;font-weight:500}
+.upgrade button{background:linear-gradient(90deg,#FFF7E9 0%,#FBE9CB 50%,#FFF7E9 100%)}
+.formula p,.acquisition th,.benefits th{font-family:"PingFang SC",sans-serif;font-size:12px;font-weight:500}
+/* Right edge is open until the last benefit column is reached. */
+.benefit-clip{border-top-right-radius:0;border-bottom-right-radius:0;border-right:0}
+.benefit-clip.at-end{border-top-right-radius:8px;border-bottom-right-radius:8px;border-right:1px solid #f1f1f1}
+.titlebar svg{stroke-width:1.5}
+/* Layered warm rays follow the background's upper-left diagonal lighting. */
+.hero{position:relative;isolation:isolate}
+.hero-sheen{position:absolute;top:0;left:0;width:320px;height:240px;overflow:hidden;pointer-events:none;z-index:1;mix-blend-mode:screen;mask-image:radial-gradient(ellipse at 20% 8%,#000 5%,rgba(0,0,0,.8) 30%,transparent 79%);-webkit-mask-image:radial-gradient(ellipse at 20% 8%,#000 5%,rgba(0,0,0,.8) 30%,transparent 79%)}
+.hero-sheen::before,.hero-sheen::after{content:"";position:absolute;transform-origin:50% 0;opacity:0;pointer-events:none;background:linear-gradient(90deg,transparent 0%,rgba(240,193,125,.035) 18%,rgba(255,225,178,.23) 50%,rgba(240,193,125,.045) 78%,transparent 100%);mask-image:linear-gradient(#000 0%,#000 18%,transparent 100%);-webkit-mask-image:linear-gradient(#000 0%,#000 18%,transparent 100%);animation:membership-sheen 2800ms cubic-bezier(.22,.61,.36,1) 1 both}
+.hero-sheen::before{top:-100px;left:-140px;width:145px;height:480px;filter:blur(11px)}
+.hero-sheen::after{top:-48px;left:-70px;width:88px;height:300px;filter:blur(7px);background:linear-gradient(90deg,transparent,rgba(255,232,196,.17) 48%,transparent);animation-delay:160ms}
+@keyframes membership-sheen{0%{transform:translateX(0) rotate(-38deg);opacity:0}14%{opacity:.85}48%{opacity:.72}100%{transform:translateX(350px) rotate(-38deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.hero-sheen::before,.hero-sheen::after{animation:none}}
+/* Stronger entry rays and a matching highlight on the baked-in membership typography. */
+.hero-sheen::before{left:-195px;background:linear-gradient(90deg,transparent,rgba(255,218,159,.1) 20%,rgba(255,238,204,.44) 50%,rgba(255,218,159,.1) 80%,transparent)}
+.hero-sheen::after{left:-115px;background:linear-gradient(90deg,transparent,rgba(255,242,216,.32) 48%,transparent)}
+.hero-exposure{position:absolute;left:24px;top:26px;width:150px;height:67px;pointer-events:none;z-index:2;overflow:hidden;border-radius:5px}
+.hero-exposure::before,.hero-exposure::after{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8.png") -24px -26px/390px 294px no-repeat;filter:brightness(1.6) saturate(1.12);mask-image:linear-gradient(128deg,transparent 15%,#000 50%,transparent 85%);-webkit-mask-image:linear-gradient(128deg,transparent 15%,#000 50%,transparent 85%);mask-size:145px 100%;-webkit-mask-size:145px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-exposure 2800ms cubic-bezier(.22,.61,.36,1) 1 both}
+.hero-exposure::after{filter:brightness(1.35) saturate(1.08);mask-size:88px 100%;-webkit-mask-size:88px 100%;animation-delay:160ms}
+@keyframes membership-exposure{0%{mask-position:-210px 0;-webkit-mask-position:-210px 0;opacity:0}14%{opacity:.9}48%{opacity:.85}100%{mask-position:240px 0;-webkit-mask-position:240px 0;opacity:0}}
+@media(prefers-reduced-motion:reduce){.hero-exposure::before,.hero-exposure::after{animation:none;opacity:0}}
+/* Screen compositing keeps the exposure highlight from forming a dark bottom frame. */
+.hero-exposure{mix-blend-mode:screen;border-radius:0;mask-image:linear-gradient(transparent 0%,#000 12%,#000 80%,transparent 100%);-webkit-mask-image:linear-gradient(transparent 0%,#000 12%,#000 80%,transparent 100%)}
+/* Remove chart background from the highlight, leaving only bright glyphs and gem facets. */
+.hero-exposure{mix-blend-mode:screen;mask-image:none;-webkit-mask-image:none}
+.hero-exposure::before{filter:url(#membership-ink) brightness(1.6) saturate(1.12)}
+.hero-exposure::after{filter:url(#membership-ink) brightness(1.35) saturate(1.08)}
+/* Richer gold with gradually opening, counterclockwise rays. */
+.hero-sheen::before{background:linear-gradient(90deg,transparent,rgba(224,151,47,.13) 20%,rgba(255,194,83,.48) 50%,rgba(225,155,53,.13) 80%,transparent);animation-name:membership-gold-main}
+.hero-sheen::after{background:linear-gradient(90deg,transparent,rgba(255,203,105,.36) 48%,transparent);animation-name:membership-gold-short}
+@keyframes membership-gold-main{0%{transform:translateX(0) rotate(-28deg);opacity:0}14%{transform:translateX(48px) rotate(-32deg);opacity:.9}48%{transform:translateX(180px) rotate(-45deg);opacity:.76}100%{transform:translateX(350px) rotate(-65deg);opacity:0}}
+@keyframes membership-gold-short{0%{transform:translateX(0) rotate(-40deg);opacity:0}14%{transform:translateX(48px) rotate(-45deg);opacity:.85}48%{transform:translateX(180px) rotate(-58deg);opacity:.68}100%{transform:translateX(350px) rotate(-78deg);opacity:0}}
+/* Pale champagne light; smooth compositor-driven translation and rotation. */
+.hero-sheen{mix-blend-mode:normal}
+.hero-sheen::before,.hero-sheen::after{will-change:transform,opacity;backface-visibility:hidden;animation-duration:3200ms;animation-timing-function:cubic-bezier(.25,.25,.75,.75);filter:none}
+.hero-sheen::before{background:linear-gradient(90deg,transparent,rgba(246,210,155,.06) 15%,rgba(255,229,183,.23) 35%,rgba(255,241,215,.35) 50%,rgba(255,229,183,.23) 65%,rgba(246,210,155,.06) 85%,transparent)}
+.hero-sheen::after{background:linear-gradient(90deg,transparent,rgba(255,234,199,.12) 28%,rgba(255,245,225,.27) 50%,rgba(255,234,199,.12) 72%,transparent)}
+@keyframes membership-gold-main{0%{transform:translate3d(0,0,0) rotate(-28deg);opacity:0}18%{opacity:.9}52%{opacity:.76}100%{transform:translate3d(350px,0,0) rotate(-65deg);opacity:0}}
+@keyframes membership-gold-short{0%{transform:translate3d(0,0,0) rotate(-40deg);opacity:0}18%{opacity:.85}52%{opacity:.68}100%{transform:translate3d(350px,0,0) rotate(-78deg);opacity:0}}
+.hero-exposure::before,.hero-exposure::after{animation-duration:3200ms;animation-timing-function:linear}
+
+/* Broader rays matching the background lighting, with a slightly faster pass. */
+.hero-sheen::before{width:185px}
+.hero-sheen::after{width:115px}
+.hero-sheen::before,.hero-sheen::after,.hero-exposure::before,.hero-exposure::after{animation-duration:2800ms}
+.hero-exposure::before{mask-size:185px 100%;-webkit-mask-size:185px 100%}
+.hero-exposure::after{mask-size:115px 100%;-webkit-mask-size:115px 100%}
+/* Wider rays lift upward with a pronounced counterclockwise finish. */
+.hero-sheen::before{width:225px}
+.hero-sheen::after{width:145px}
+.hero-exposure::before{mask-size:225px 100%;-webkit-mask-size:225px 100%}
+.hero-exposure::after{mask-size:145px 100%;-webkit-mask-size:145px 100%}
+@keyframes membership-gold-main{0%{transform:translate3d(0,0,0) rotate(-28deg);opacity:0}18%{opacity:.9}52%{opacity:.8}72%{opacity:.65}100%{transform:translate3d(350px,-130px,0) rotate(-108deg);opacity:0}}
+@keyframes membership-gold-short{0%{transform:translate3d(0,0,0) rotate(-40deg);opacity:0}18%{opacity:.85}52%{opacity:.74}72%{opacity:.55}100%{transform:translate3d(350px,-155px,0) rotate(-125deg);opacity:0}}
+/* Staggered growth from a fixed baseline, followed by a small spring. */
+.hero>img.chart-base{mask:url(#membership-bars);-webkit-mask:url(#membership-bars)}
+.chart-bars{position:absolute;left:0;top:0;width:390px;height:294px;pointer-events:none}
+.chart-bars span{position:absolute;display:block;background-image:url("assets/growth-chart-svip8.png");background-size:390px 294px;background-repeat:no-repeat;border-radius:8px 8px 0 0;transform-origin:center bottom;will-change:transform;animation:membership-bar-rise 850ms cubic-bezier(.22,.61,.36,1) both}
+@keyframes membership-bar-rise{0%{transform:scaleY(0)}65%{transform:scaleY(1.04)}82%{transform:scaleY(.985)}100%{transform:scaleY(1)}}
+@media(prefers-reduced-motion:reduce){.chart-bars span{animation:none}}
+.hero>img.chart-base{mask:none;-webkit-mask:none}
+.chart-values{position:absolute;inset:0;pointer-events:none;animation:membership-values-in 450ms ease-out 1600ms both}
+.chart-values span{position:absolute;text-align:center;font:12px/18px Arial,sans-serif;color:#958677}
+.chart-values .current{color:#f8e5c5}
+@keyframes membership-values-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.chart-values{animation:none}}
+/* Frame 135 is used unchanged; chart and membership content remain separate layers. */
+.hero{background:#30231a url("assets/growth-background-frame135.png") left top/390px 348px no-repeat}
+.hero>img.chart-base{filter:url(#membership-ink);clip-path:inset(26px 216px 178px 24px);mask:none;-webkit-mask:none}
+.hero>img.chart-base{clip-path:inset(26px 216px 201px 24px)}
+.growth-speed{position:absolute;left:28px;top:100px;margin:0;color:#b3aaa0;font:12px/18px Arial,"Microsoft YaHei",sans-serif;pointer-events:none}
+/* Bars finish at 1.53s; values follow immediately, then the light sweep begins. */
+.chart-values{animation-duration:280ms;animation-delay:1530ms}
+.hero-sheen::before,.hero-exposure::before{animation-delay:1810ms}
+.hero-sheen::after,.hero-exposure::after{animation-delay:1970ms}
+/* Each value fades in while its own bar rises. */
+.chart-values{animation:none}
+.chart-values span{animation:membership-values-in 280ms ease-out both}
+.chart-values span:nth-child(1){animation-delay:0ms}
+.chart-values span:nth-child(2){animation-delay:180ms}
+.chart-values span:nth-child(3){animation-delay:265ms}
+.chart-values span:nth-child(4){animation-delay:350ms}
+.chart-values span:nth-child(5){animation-delay:435ms}
+.chart-values span:nth-child(6){animation-delay:520ms}
+.chart-values span:nth-child(7){animation-delay:605ms}
+.chart-values span:nth-child(8){animation-delay:690ms}
+.chart-values span:nth-child(9){animation-delay:775ms}
+.chart-values span:nth-child(10){animation-delay:860ms}
+.hero-sheen::before,.hero-exposure::before{animation-delay:1530ms}
+.hero-sheen::after,.hero-exposure::after{animation-delay:1690ms}
+@media(prefers-reduced-motion:reduce){.chart-values span{animation:none}}
+/* Gentle numeric spring, keeping the existing per-bar stagger. */
+.chart-values span{animation-name:membership-value-spring;animation-duration:500ms;animation-timing-function:cubic-bezier(.22,.61,.36,1);transform-origin:center bottom}
+@keyframes membership-value-spring{0%{opacity:0;transform:translateY(7px) scale(.94)}58%{opacity:1;transform:translateY(-2px) scale(1.04)}80%{opacity:1;transform:translateY(1px) scale(.99)}100%{opacity:1;transform:translateY(0) scale(1)}}
+/* Subtler value bounce and a tighter transition into the light sweep. */
+.chart-values span{animation-duration:420ms}
+@keyframes membership-value-spring{0%{opacity:0;transform:translateY(4px) scale(.985)}58%{opacity:1;transform:translateY(-.8px) scale(1.012)}80%{opacity:1;transform:translateY(.3px) scale(.998)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.hero-sheen::before,.hero-exposure::before{animation-delay:1280ms}
+.hero-sheen::after,.hero-exposure::after{animation-delay:1400ms}
+/* Wider light entering from beyond the left edge of the page. */
+.hero-sheen::before{width:270px;left:-310px}
+.hero-sheen::after{width:180px;left:-225px}
+.hero-exposure::before{mask-size:270px 100%;-webkit-mask-size:270px 100%}
+.hero-exposure::after{mask-size:180px 100%;-webkit-mask-size:180px 100%}
+/* Use the supplied soft champagne glow without modifying the image. */
+.hero-sheen{width:390px;height:260px;mix-blend-mode:screen;mask-image:linear-gradient(#000 0%,#000 55%,transparent 100%);-webkit-mask-image:linear-gradient(#000 0%,#000 55%,transparent 100%)}
+.hero-sheen::before{left:-280px;top:-80px;width:450px;height:400px;background:url("assets/growth-sweep-reference.png") center/contain no-repeat;mask-image:none;-webkit-mask-image:none;transform-origin:25% 25%;animation-name:membership-reference-glow}
+.hero-sheen::after{display:none}
+@keyframes membership-reference-glow{0%{transform:translate3d(-100px,0,0) rotate(-8deg);opacity:0}20%{opacity:.58}55%{opacity:.48}100%{transform:translate3d(380px,-130px,0) rotate(-82deg);opacity:0}}
+/* Restore unfiltered high-resolution membership artwork; remove sweep and exposure. */
+.hero>img.chart-base{filter:none;clip-path:inset(0 210px 178px 0);mask:none;-webkit-mask:none;image-rendering:auto}
+.hero-sheen,.hero-exposure{display:none}
+/* Highlight only the membership gem and title; the original artwork stays unfiltered. */
+.badge-shine{position:absolute;left:26px;top:30px;width:138px;height:22px;pointer-events:none;z-index:3;mix-blend-mode:screen}
+.badge-shine::before{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8.png") -26px -30px/390px 294px no-repeat;filter:url(#membership-ink) brightness(1.65);mask-image:linear-gradient(110deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);-webkit-mask-image:linear-gradient(110deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);mask-size:45px 100%;-webkit-mask-size:45px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-badge-shine 1400ms ease-in-out 1280ms both}
+@keyframes membership-badge-shine{0%{mask-position:-50px 0;-webkit-mask-position:-50px 0;opacity:0}15%{opacity:.9}75%{opacity:.9}100%{mask-position:145px 0;-webkit-mask-position:145px 0;opacity:0}}
+@media(prefers-reduced-motion:reduce){.badge-shine{display:none}}
+/* Left-leaning highlights synchronized across the badge and growth value. */
+.badge-shine::before,.growth-value-shine::before{mask-image:linear-gradient(70deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);-webkit-mask-image:linear-gradient(70deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%)}
+.growth-value-shine{position:absolute;left:26px;top:66px;width:138px;height:28px;pointer-events:none;z-index:3;mix-blend-mode:screen}
+.growth-value-shine::before{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8.png") -26px -66px/390px 294px no-repeat;filter:url(#membership-ink) brightness(1.65);mask-size:45px 100%;-webkit-mask-size:45px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-badge-shine 1400ms ease-in-out 1280ms both}
+@media(prefers-reduced-motion:reduce){.growth-value-shine{display:none}}
+/* Faster stagger and a close handoff to the localized shimmer. */
+.chart-bars span{animation-duration:600ms}
+.chart-values span{animation-duration:320ms}
+.chart-values span:nth-child(2){animation-delay:110ms}
+.chart-values span:nth-child(3){animation-delay:165ms}
+.chart-values span:nth-child(4){animation-delay:220ms}
+.chart-values span:nth-child(5){animation-delay:275ms}
+.chart-values span:nth-child(6){animation-delay:330ms}
+.chart-values span:nth-child(7){animation-delay:385ms}
+.chart-values span:nth-child(8){animation-delay:440ms}
+.chart-values span:nth-child(9){animation-delay:495ms}
+.chart-values span:nth-child(10){animation-delay:550ms}
+.badge-shine::before,.growth-value-shine::before{animation-delay:900ms;animation-duration:1200ms}
+/* Start shimmer 240ms before the final bar settles (1.04s). */
+.badge-shine::before,.growth-value-shine::before{animation-delay:800ms}
+.badge-shine::before,.growth-value-shine::before{animation-delay:650ms}
+.growth-value-shine::before{filter:url(#growth-cream-shine)}

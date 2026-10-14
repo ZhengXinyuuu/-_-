@@ -1,0 +1,88 @@
+@font-face{font-family:"PingFang SC";src:url("./assets/PingFangSC-Semibold.otf") format("opentype");font-style:normal;font-weight:600;font-display:swap}@font-face{font-family:"Chill Jinshu Song Text";src:url("./assets/ChillJinshuSongTextMedium.otf") format("opentype");font-style:normal;font-weight:500;font-display:swap}
+*{box-sizing:border-box}body{margin:0;background:#e9e6e1;color:#353535;font-family:Arial,"Microsoft YaHei",sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;border:0;cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid #d05441;outline-offset:3px}.phone{width:100%;max-width:780px;min-height:100dvh;margin:auto;background:#f8f5f0;position:relative;overflow:hidden;container-type:inline-size;padding-top:1px}.status{height:14.23cqw;display:flex;align-items:flex-start;padding:4.65cqw 9.1cqw 0 12.95cqw;justify-content:space-between;color:#000}.status b{font-family:"PingFang SC",sans-serif;font-size:4.102564cqw;font-weight:600;line-height:1.2}.status svg{width:19.23cqw;height:3.85cqw;margin-top:.8cqw}.capsule{height:7.95cqw;width:21.54cqw;margin:1.28cqw 2.05cqw 0 auto;background:#ffffff9c;border-radius:6cqw;display:flex;align-items:center}.capsule button{background:none;height:100%;width:50%;display:flex;justify-content:center;align-items:center;gap:.5cqw}.capsule i{width:1.15cqw;height:1.15cqw;background:#333;border-radius:50%}.capsule i:nth-child(2){width:1.8cqw;height:1.8cqw}.capsule>span{height:5cqw;width:1px;background:#e4e4e4}.capsule b{width:4.1cqw;height:4.1cqw;border:.52cqw solid;border-radius:50%;position:relative}.capsule b:after{content:"";position:absolute;inset:.65cqw;border-radius:50%;background:#333}.daily{height:22.18cqw;position:relative;margin:4.87cqw 5.13cqw 0}.date{font-family:"Times New Roman","SimSun",serif;font-size:4.62cqw;display:flex;align-items:center;gap:2.56cqw}.date span{font-family:Arial,"Microsoft YaHei",sans-serif;border:.75px solid #e64e3b;border-radius:4cqw;padding:.75cqw 2.7cqw;font-size:3.08cqw}.lunar{font-size:3.08cqw;color:#999;margin:1.4cqw 0}.element{position:absolute;right:4.36cqw;top:-1.4cqw;display:flex;align-items:center;gap:3.1cqw;color:#d55643}.element strong{font-family:"Chill Jinshu Song Text",serif;font-size:12.307692cqw;font-weight:500;line-height:1.15}.element span{border-radius:4cqw;background:linear-gradient(#d55846,#f7f0e9);color:#fff;font-family:SimSun,serif;font-size:3.08cqw;padding:2.05cqw 1.15cqw;line-height:1.3}.auspicious{position:absolute;right:1.2cqw;top:12.44cqw;color:#e94f3a;font-size:3.08cqw;letter-spacing:.13cqw;margin:3cqw 0 0}.colors{margin-top:-4.5cqw}.heading{display:flex;align-items:center;position:relative;padding-left:5.13cqw;gap:3cqw}.heading h1{font-family:"Times New Roman",SimSun,serif;font-weight:500;font-size:4.1cqw;margin:0;line-height:5.64cqw;z-index:1}.sparkle{position:absolute;left:2.15cqw;top:-3.1cqw;font-size:7.7cqw;line-height:1;color:#df7d70}.heading button{background:#fff;color:#888;font-size:3.08cqw;border-radius:4cqw;padding:.65cqw 2.6cqw}.subtitle{font-size:3.08cqw;color:#999;margin:1.1cqw 5.13cqw 2.05cqw}.swatches{display:flex;gap:2.05cqw;overflow:auto;padding:0 5.13cqw;scrollbar-width:none}.swatches::-webkit-scrollbar{display:none}.swatch{background:white;border-radius:3.2cqw;flex:0 0 21.03cqw;padding:1.03cqw;height:18.97cqw}.swatch i{height:9.49cqw;display:block;border-radius:2.1cqw}.swatch>span{display:block;font-size:3.08cqw;white-space:nowrap;margin-top:2.25cqw}.swatch em{font-style:normal;color:#888}.weather{height:15.9cqw;border-radius:3.2cqw;background:#fff;margin:3.08cqw 4.62cqw 3.08cqw 5.13cqw;display:flex;align-items:center;gap:2.4cqw;padding:0 3.05cqw}.weather strong{font-size:3.08cqw;font-weight:400;white-space:nowrap}.weather p{font-size:3.08cqw;margin:1.5cqw 0 0;color:#909090;white-space:nowrap}.sun{font-size:6.4cqw}.bag{font-size:5.3cqw;margin:0 1cqw 0 .6cqw}.divider{width:1px;height:7.7cqw;background:#ddd;margin-left:auto;margin-right:.5cqw}.outfit{margin:0 4.62cqw 3.08cqw 5.13cqw;background:#fff;border-radius:3.2cqw;padding:1.03cqw 1.03cqw 0;overflow:hidden}.outfit-image{width:100%;aspect-ratio:688/606;border-radius:2.05cqw;background-image:url('./assets/home-reference.png');background-size:113.3721% auto;background-position:52.1739% 72.8782%;background-repeat:no-repeat}.outfit-footer{height:12.44cqw;display:flex;align-items:center;justify-content:space-between;padding:0 2.05cqw}.outfit-footer p{font-size:3.08cqw;margin:0}.outfit-footer button,.primary{background:#d15441;border-radius:6cqw;color:#fff;font-size:3.08cqw;padding:1.5cqw 4.1cqw}.bottom-nav{height:16.15cqw;background:#fff;display:flex;align-items:flex-start;padding-top:4.35cqw}.bottom-nav button{width:25%;background:none;font-family:SimSun,"Times New Roman",serif;font-size:4.62cqw;font-weight:500}.bottom-nav .active{color:#e6523c}.home-indicator{height:5.13cqw;background:white;position:relative}.home-indicator:after{content:"";position:absolute;width:26.92cqw;height:.77cqw;background:#333;border-radius:1cqw;left:36.54cqw;bottom:2.18cqw}dialog{width:min(90%,620px);border:0;border-radius:24px;padding:32px;color:#353535;background:#f8f5f0}dialog::backdrop{background:#33251d66;backdrop-filter:blur(3px)}.close{position:absolute;right:14px;top:8px;background:none;font-size:30px}dialog h2{font-weight:400;color:#d15441}dialog p{line-height:1.8}dialog .outfit-image{max-height:420px;background-size:113.3721% auto}dialog .primary{font-size:16px;padding:12px 24px}#secondary-view{padding:4cqw 5.13cqw;min-height:170cqw}#secondary-view h1{font-weight:400;color:#d15441}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.calendar button{background:white;border-radius:50%;aspect-ratio:1}.calendar button.selected{background:#d15441;color:white}.secondary-card{background:white;border-radius:20px;padding:24px;margin:24px 0}.secondary-card a{color:#d15441}.empty{padding:40px 0;text-align:center;color:#888}[hidden]{display:none!important}@media(min-width:781px){.phone{box-shadow:0 0 60px #45322612}}
+/* Preserve the illustrated weather and scene icons from the supplied design. */
+.sun,.bag{display:block;flex-shrink:0;color:transparent;background-image:url('./assets/home-reference.png');background-repeat:no-repeat;font-size:0}.sun{width:7.18cqw;height:8.2cqw;background-size:1392.857% auto;background-position:8.56% 40.84%}.bag{width:6.41cqw;height:7.18cqw;background-size:1560% auto;background-position:57.26% 40.82%}
+
+/* Actual Medium font outlines; SimSun has no Medium face. */
+.heading h1,.bottom-nav button{
+  font-family:"Chill Jinshu Song Text",serif;
+  font-weight:500;
+  font-synthesis:none;
+}
+/* 12pt = 16 CSS px. Keep spacing independent of the preview width. */
+#home-view{
+  display:flex;
+  flex-direction:column;
+  gap:12pt;
+  margin-top:12pt;
+  padding-bottom:calc(21.28cqw + env(safe-area-inset-bottom,0px) + 12pt);
+}
+.daily{margin:0 5.13cqw;height:20cqw;flex-shrink:0}
+.colors{margin:0}
+.weather{margin:0 4.62cqw 0 5.13cqw;flex-shrink:0}
+.outfit{margin:0 4.62cqw 0 5.13cqw}
+.fixed-bottom{
+  position:fixed;
+  z-index:10;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:780px;
+  background:#fff;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+#secondary-view{padding-bottom:calc(21.28cqw + env(safe-area-inset-bottom,0px) + 12pt)}
+.secondary-card{margin:12pt 0}
+html{scrollbar-width:none}
+html::-webkit-scrollbar{display:none}
+/* Equal card insets and a 4pt gap between each swatch and its caption. */
+.swatch{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start}
+.swatch i{flex-shrink:0;width:100%}
+.swatch>span{display:flex;justify-content:center;align-items:center;gap:0;margin-top:4pt;width:100%;text-align:center;line-height:1.5}
+.swatch em{flex-shrink:0}
+/* Two equal columns put the separator at the exact center of the card. */
+.weather{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;padding:0}
+.weather-half{display:flex;align-items:center;justify-content:center;gap:2cqw;min-width:0}
+.weather .divider{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0}
+.weather .bag{margin:0}
+/* Refined icon gradient and optical alignment. */
+.sparkle{
+  background:linear-gradient(to bottom,rgba(206,86,67,1) 0%,rgba(206,86,67,0) 100%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+}
+.swatch>span{transform:translateX(4pt)}
+.weather-half>.sun,.weather-half>.bag{transform:translateX(-8pt)}
+/* Keep the next card visible as a cue; touch scrolling stays native. */
+.swatches{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scroll-padding-inline:5.13cqw;overscroll-behavior-x:contain;cursor:grab;user-select:none;-webkit-user-select:none}
+.swatch{scroll-snap-align:start}
+.swatches.is-dragging{cursor:grabbing;scroll-snap-type:none}
+.swatches:focus-visible{outline:2px solid #d05441;outline-offset:-2px}
+/* A duplicate first slide makes the last-to-first transition continue left. */
+#home-view>.outfit>.outfit-image{position:relative;overflow:hidden}
+.outfit-carousel-track{position:absolute;inset:0;display:flex;transition:transform .65s cubic-bezier(.4,0,.2,1)}
+.outfit-carousel-slide{flex:0 0 100%;width:100%;height:100%;min-width:0;object-fit:cover;pointer-events:none}
+.outfit-carousel-original{background-image:url('./assets/home-reference.png');background-size:113.3721% auto;background-position:52.1739% 72.8782%;background-repeat:no-repeat}
+.outfit-carousel-track.reset-position{transition:none}
+@media(prefers-reduced-motion:reduce){.outfit-carousel-track{transition:none}}
+/* Keep the status bar and capsule stationary while content scrolls. */
+.top-bars-space{height:23.46cqw}
+.fixed-top{
+  position:fixed;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:780px;
+  height:calc(23.46cqw + 1px);
+  padding-top:1px;
+  background:#f8f5f0;
+  z-index:20;
+}
+/* Only the status bar paints a fixed backdrop; the capsule floats above content. */
+.fixed-top{background:transparent;pointer-events:none}
+.fixed-top .status{background:#f8f5f0}
+.fixed-top .capsule{pointer-events:auto}

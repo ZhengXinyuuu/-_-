@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { background: #f9f6f2; display: grid; place-items: center; min-height: 100svh; }
+/* The supplied 780 × 1688 design is the coordinate system. */
+.launch { position: relative; width: min(100vw, 46.2085308svh); aspect-ratio: 780 / 1688; overflow: hidden; container-type: inline-size; isolation: isolate; background: linear-gradient(180deg, #ce5643 0%, #db8778 15.758%, #e5afa5 29.976%, #e9bdb3 35.9%, #f5e7e0 55.45%, #f7f3ed 65.17%, #f8f5f0 100%); }
+.doors { position: absolute; inset: 15.758294% 0 0; }
+.door { position: absolute; top: 0; bottom: 0; width: 47.948718%; background: linear-gradient(180deg, #f7e6e3 0%, #f7e4e1 16.878%, #f6e5e1 23.91%, #f7e7e3 30.52%, #f9f1ee 47.12%, #faf6f3 58.65%, #faf7f3 72.71%, #f9f6f1 87.20%, #f8f5f0 100%); }
+.door-left { left: 0; border-top-right-radius: 30.769231cqw; }
+.door-right { right: 0; border-top-left-radius: 30.769231cqw; }
+.status-bar { position: absolute; top: 2.191943%; left: 12.948718%; right: 9.102564%; display: flex; align-items: center; justify-content: space-between; height: 2.369668%; color: #000; }
+.time { font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 600; font-size: 16px; line-height: 1; letter-spacing: normal; flex-shrink: 0; }
+.status-icons { display: block; width: 19.230769cqw; height: auto; aspect-ratio: 5 / 1; flex-shrink: 0; }
+.miniapp-capsule { position: absolute; width: 21.538462%; height: 3.672986%; top: 7.227488%; right: 2.051282%; border-radius: 99px; background: #efc9bf; }
+.miniapp-capsule svg { display: block; width: 100%; height: 100%; }
+/* Preserve the custom lettering and logo from the supplied artwork.
+   Only these two regions are displayed; the surrounding UI is HTML/CSS. */
+.headline { position: absolute; margin: 0; left: 14.102564%; top: 35.900474%; width: 73.076923%; height: 19.549763%; overflow: hidden; }
+.headline img { position: absolute; width: 100cqw; height: auto; max-width: none; left: -14.102564cqw; top: -77.692308cqw; }
+.brand { position: absolute; left: 31.538462%; top: 89.218009%; width: 35.256410%; height: 4.798578%; overflow: hidden; }
+.brand img { position: absolute; width: 100cqw; height: auto; max-width: none; left: -31.538462cqw; top: -193.076923cqw; }
+.home-indicator { position: absolute; width: 26.923077%; height: .35545%; bottom: .888626%; left: 36.538462%; border-radius: 999px; background: #333; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 600px) { .launch { width: 100%; } body { align-items: start; } }
+
+html.embedded-launch .launch{width:100%;height:100svh;aspect-ratio:auto}
+/* Remove the baked-in star from the lettering crop; animate a separate star. */
+.headline img{clip-path:polygon(0 0,100% 0,100% 41%,77% 41%,77% 44.5%,100% 44.5%,100% 100%,0 100%)}
+.launch-star{position:absolute;left:77.692308%;top:41.172986%;width:6.666667%;height:auto;overflow:visible;transform-origin:50% 50%}
+html.embedded-launch .launch-star{opacity:0;transform:scale(0)}
+html.embedded-launch .status-bar,html.embedded-launch .miniapp-capsule,html.embedded-launch .home-indicator{visibility:hidden}

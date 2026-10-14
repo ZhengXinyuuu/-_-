@@ -1,0 +1,64 @@
+.phone{background:#f8f5f1}.closet-page{margin:4.87cqw 5.128cqw 0;padding-bottom:23.2cqw}.match,.wardrobe{background:#fff;border-radius:3.2cqw;padding:3.08cqw;overflow:hidden}header{display:flex;align-items:center;justify-content:space-between}h1{font-family:"Chill Jinshu Song Text",serif;font-size:4.103cqw;font-weight:500;margin:0;line-height:6.15cqw}.match header .match-detail-label{font-size:3.08cqw;color:#888;text-decoration:none}.match header .match-detail-label span{margin:0 1cqw;font-size:4cqw}.intro{font-size:3.08cqw;color:#888;margin:1.41cqw 0 3.33cqw;white-space:nowrap}.match-body{display:flex;gap:4.615cqw}.match-photo{flex:0 0 29.744cqw;height:37.692cqw;border-radius:2.05cqw;background:url('./assets/closet-match.png') center / cover no-repeat}.recommend{min-width:0;flex:1}.recommend h2{font-size:3.08cqw;font-weight:400;line-height:4.1cqw;margin:0}.recommend p{font-size:3.08cqw;color:#888;line-height:4.1cqw;margin:1.03cqw 0 1.54cqw}.recommend-items{display:flex;gap:2.05cqw;overflow:auto;margin-right:-3.08cqw;scrollbar-width:none}.garment{border:1px solid #e3e3e3;border-radius:2.05cqw;background:#fff;display:flex;flex-direction:column;align-items:center;padding:0;overflow:hidden}.recommend-items .garment{flex:0 0 19.487cqw;height:27.18cqw}.garment strong{font-size:3.08cqw;font-weight:600;line-height:4.36cqw}.tone{display:flex;align-items:center;gap:1.026cqw;font-size:3.08cqw;color:#888;line-height:4.36cqw;margin-top:.51cqw}.tone i{width:2.56cqw;height:2.56cqw;border-radius:1cqw;background:var(--tone);border:1px solid #eee}.art{display:block;background-image:url('./assets/closet-reference.png');background-size:100cqw auto;background-repeat:no-repeat;flex-shrink:0}.recommend-items .art{width:16.67cqw;height:14.87cqw;margin:.9cqw 0 .9cqw}.wardrobe{margin-top:3.077cqw;padding-bottom:3.08cqw}.actions{display:flex;gap:3.08cqw;align-items:center}.actions button{width:4.1cqw;height:4.1cqw;padding:0;background:none}.actions svg{width:100%;height:100%;fill:none;stroke:#888;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.categories{display:flex;gap:3.077cqw;margin:2.82cqw 0 3.077cqw}.categories button{border-radius:4cqw;background:#f2f1f3;color:#888;font-size:3.08cqw;height:5.64cqw;min-width:12.05cqw;padding:0 2cqw}.categories button.active{color:#fff;background:#d15441}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3.077cqw 2.05cqw}.grid .garment{height:39.23cqw}.grid .art{width:23.077cqw;height:23.077cqw;margin:2.56cqw 0 .9cqw}.grid .garment strong{margin-top:0}.grid .tone{margin-top:.51cqw}.garment:focus-visible{outline-offset:-3px}.empty-result{font-size:3cqw;text-align:center;padding:8cqw 0;color:#888}#search-input{width:100%;padding:1.5cqw;border:1px solid #ddd;border-radius:1.5cqw;margin-top:2cqw;font:inherit}dialog form{display:grid;gap:14px}dialog input,dialog select{font:inherit;padding:10px;border:1px solid #ddd;border-radius:8px;width:100%}dialog label{display:grid;gap:6px}dialog button.primary{font-size:16px}dialog .filter-options{display:flex;flex-wrap:wrap;gap:10px}dialog .filter-options button{padding:10px 18px;border-radius:20px}.custom-art{background:#f8f5f1;display:grid;place-items:center;font-size:7cqw;color:#b9a594}
+
+.match{padding-bottom:3.59cqw}.grid .art{margin-bottom:1.92cqw}
+
+
+/* Use the actual Medium font file without synthesized weight. */
+@font-face{font-family:'Closet Jinshu Medium';src:url('./assets/ChillJinshuSongTextMedium.otf') format('opentype');font-style:normal;font-weight:500;font-display:swap}
+.match>header>h1,.wardrobe>header>h1{font-family:'Closet Jinshu Medium',serif;font-weight:500;font-synthesis:none}
+.expanded-art{display:flex;align-items:center;justify-content:center}
+.compact-crop{display:block;width:22.5cqw;height:18.69cqw;background-image:url('./assets/closet-reference.png');background-size:135cqw auto;background-repeat:no-repeat}
+/* Match the recommendation heading to PingFang SC Medium when available. */
+@font-face{font-family:'Closet PingFang Medium';src:local('PingFangSC-Medium'),local('PingFang SC Medium');font-style:normal;font-weight:500;font-display:swap}
+.recommend h2,.garment strong{font-family:'Closet PingFang Medium','Microsoft YaHei',sans-serif;font-weight:500;font-synthesis:none}
+
+/* Add-garment dialog typography and balanced content spacing. */
+.add-garment-panel{padding:28px 32px;color:#333}
+.add-garment-panel h2{font-family:'Closet Jinshu Medium',serif;font-weight:500;font-synthesis:none;font-size:18px;line-height:1.5;color:#333;margin:0 0 18px}
+.add-garment-panel form{gap:16px}
+.add-garment-panel label{gap:8px}
+.add-garment-panel select{appearance:none;-webkit-appearance:none;padding-right:40px;background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888888' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:16px}
+.add-garment-panel button.primary{font-family:'Closet Jinshu Medium',serif;font-weight:500;font-synthesis:none;font-size:18px;line-height:1.5;padding:11px 20px;margin-top:4px}
+.add-garment-panel .close{width:32px;height:32px;right:12px;top:12px;padding:0;font-size:0;color:#888}
+.add-garment-panel .close:before,.add-garment-panel .close:after{content:'';position:absolute;left:7px;top:15px;width:18px;height:1.5px;background:currentColor;border-radius:1px;transform:rotate(45deg)}
+.add-garment-panel .close:after{transform:rotate(-45deg)}
+
+.add-garment-panel label,.add-garment-panel input,.add-garment-panel select,.add-garment-panel input::placeholder{font-size:12px}
+.add-garment-panel button.primary{height:46px;min-height:46px;padding:0 20px;display:flex;align-items:center;justify-content:center}
+.add-garment-panel{max-height:calc(100dvh - 32px);overflow-y:auto}
+.add-garment-panel .photo-upload{height:92px;border:1px dashed #d4ccc5;border-radius:10px;position:relative;display:flex;justify-content:center;align-items:center;cursor:pointer;background:#fff;overflow:hidden}
+.photo-upload input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;z-index:1}
+.photo-upload:focus-within{outline:2px solid #d15441;outline-offset:2px}
+.photo-placeholder{display:flex;flex-direction:column;align-items:center;gap:5px;color:#888}.photo-plus{font-size:26px;font-weight:300;line-height:1}
+#photo-preview{height:100%;width:100%;object-fit:contain}.uploaded-garment{width:100%;height:100%;object-fit:contain}
+#photo-error{font-size:12px;color:#b53d30;margin:0}.add-garment-panel button.primary:disabled{opacity:.6;cursor:wait}
+/* Match the main page card radius; profile CTA is 46px at 390px mobile width. */
+.add-garment-panel{border-radius:3.2cqw}
+
+
+#search-input,#search-input::placeholder{font-size:3.08cqw}
+
+/* Preserve the partially visible last card and reveal it fully on swipe. */
+.recommend-items{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;overscroll-behavior-x:contain;touch-action:pan-x pan-y pinch-zoom;cursor:grab;padding-right:3.08cqw;scroll-padding-right:3.08cqw}
+.recommend-items::-webkit-scrollbar{display:none}
+.recommend-items .garment{scroll-snap-align:start;user-select:none;-webkit-user-select:none}
+.recommend-items.is-dragging{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+.recommend-items:focus-visible{outline:2px solid #d15441;outline-offset:-2px}
+.recommend-items .match-shoes-art{background-image:url('./assets/closet-match-shoes-card.png');background-size:19.487cqw auto!important;background-position:center -.9cqw!important}
+/* Keep status glyphs fixed, with no stationary background covering the content. */
+.fixed-top .status{background:transparent}
+
+/* Filter dialog follows the shared modal typography. */
+.filter-panel h2{font-family:'Closet Jinshu Medium',serif;font-weight:500;font-synthesis:none;font-size:18px;line-height:1.5;color:#333;margin:0 0 18px}
+.filter-panel .filter-options button{font-family:'Closet PingFang Medium','Microsoft YaHei',sans-serif;font-size:3.08cqw;font-weight:500;line-height:1.5;color:#333}
+
+.filter-panel{border-radius:3.2cqw}
+.filter-panel .close{width:32px;height:32px;right:12px;top:12px;padding:0;font-size:0;color:#888}
+.filter-panel .close:before,.filter-panel .close:after{content:'';position:absolute;left:7px;top:15px;width:18px;height:1.25px;background:currentColor;border-radius:1px;transform:rotate(45deg)}
+.filter-panel .close:after{transform:rotate(-45deg)}
+.filter-panel .filter-options button{font-weight:400}
+
+.filter-panel .filter-options button{font-family:'Microsoft YaHei','PingFang SC',sans-serif;font-weight:400;font-synthesis:none}
+
+.filter-panel .filter-options button{background:#fff;border:1px solid transparent;color:#333}
+.filter-panel .filter-options button.selected{background:#efd5cc;border-color:#ec5039;color:#e95039}

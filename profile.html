@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f8f5f0"><title>完善信息 · 五行衣橱</title>
+<link rel="icon" href="data:,"><link rel="stylesheet" href="./styles.css">
+<script src="./profile.js" defer></script>
+</head>
+<body>
+<main class="profile" aria-labelledby="page-title">
+<div class="status-bar" aria-hidden="true"><span>9:41</span><svg viewBox="0 0 150 30" preserveAspectRatio="xMidYMid meet" fill="none"><g fill="#000"><rect x="0" y="18" width="6" height="9" rx="3"/><rect x="10" y="13" width="6" height="14" rx="3"/><rect x="20" y="8" width="6" height="19" rx="3"/><rect x="30" y="3" width="6" height="24" rx="3"/></g><svg x="51" y="3" width="33" height="24" viewBox="0 0 33 24" preserveAspectRatio="xMidYMid meet"><path fill="#000" d="M0 6.84C9.12-2.28 23.88-2.28 33 6.84L29.88 9.96C22.48 2.56 10.52 2.56 3.12 9.96ZM5.65 12.49C11.64 6.5 21.36 6.5 27.35 12.49L24.23 15.61C19.97 11.35 13.03 11.35 8.77 15.61ZM11.3 18.14C14.17 15.27 18.83 15.27 21.7 18.14L16.5 23.34Z"/></svg><rect x="100" y="4" width="44" height="23" rx="7" stroke="#000" stroke-opacity=".4" stroke-width="2"/><rect x="103" y="7" width="38" height="17" rx="4" fill="#000"/><path d="M148 12V20Q153 16 148 12" fill="#999"/></svg></div>
+<nav class="navigation" aria-label="页面导航"><a class="back" href="./launch.html" aria-label="返回"><svg viewBox="0 0 32 40"><path d="M24 6L9 20l15 14"/></svg></a><button class="skip" type="button">跳过</button></nav>
+<div class="progress" role="progressbar" aria-label="信息填写进度" aria-valuemin="0" aria-valuemax="2" aria-valuenow="1"><span></span></div>
+<h1 id="page-title">完善信息<br>获取更精确的穿搭推荐</h1>
+<form id="profile-form">
+<section id="basic-fields" class="fields">
+<fieldset><legend>性别</legend><div class="gender-options">
+<label class="gender"><input type="radio" name="gender" value="female" checked><span><svg viewBox="0 0 28 36"><circle cx="14" cy="13" r="10"/><path d="M14 23v10m-4-4h8"/></svg>女生</span></label>
+<label class="gender"><input type="radio" name="gender" value="male"><span><svg viewBox="0 0 28 36"><circle cx="14" cy="22" r="10"/><path d="M14 12V4m-5 5 5-5 5 5"/></svg>男生</span></label>
+</div></fieldset>
+<label class="birthday-label" for="birthday-button">选择生日</label>
+<button id="birthday-button" class="birthday" type="button" aria-haspopup="dialog"><span id="birthday-value">2003–12–10</span><svg viewBox="0 0 20 28"><path d="m4 4 10 10L4 24"/></svg></button>
+</section>
+<section id="style-fields" class="fields" hidden><fieldset><legend>穿衣风格</legend><div class="style-options"></div></fieldset><label class="photo-label" for="photo">照片</label><label class="photo-box"><input id="photo" type="file" accept="image/*"><span>＋</span><img alt="选择的穿搭照片" hidden></label></section>
+<button class="next" type="submit">下一步</button>
+<p class="notice" role="status"></p>
+</form>
+<div class="home-indicator" aria-hidden="true"></div>
+<dialog id="birthday-dialog"><form method="dialog"><header><button value="cancel">取消</button><strong>选择生日</strong><button value="confirm">确定</button></header><input type="date" id="birthday" aria-label="生日" value="2003-12-10" min="1900-01-01"></form></dialog>
+</main>
+</body></html>
+

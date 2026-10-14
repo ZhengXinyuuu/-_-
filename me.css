@@ -1,0 +1,30 @@
+.phone{background:#f8f5f1;min-height:max(100dvh,216.667cqw)}.account{margin:4.872cqw 5.128cqw 0;display:flex;align-items:center;height:18.205cqw;gap:4.359cqw}.avatar{width:18.205cqw;height:18.205cqw;flex-shrink:0;border-radius:50%;background:url('./assets/me-reference.png') -5.128cqw -28.462cqw / 100cqw auto}.identity h1{font-family:'Chill Jinshu Song Text',serif;font-weight:500;font-synthesis:none;font-size:5.128cqw;line-height:1.5;margin:0}.identity p{font-size:2.564cqw;color:#888;margin:1.026cqw 0 0;line-height:1.5}.account #edit{margin-left:auto;background:none;padding:0;width:4.103cqw;height:4.103cqw;color:#888}.account svg,.menu svg,.archive svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.archive{margin:4.103cqw 5.128cqw 0;background:white;border-radius:3.205cqw;height:24.359cqw;padding:3.077cqw}.archive header{display:flex;align-items:center;justify-content:space-between}.archive h2{font-family:'Chill Jinshu Song Text',serif;font-size:4.103cqw;font-weight:500;font-synthesis:none;line-height:6.154cqw;margin:0}.archive a{color:#888;text-decoration:none;display:flex;align-items:center;gap:1.026cqw;font-size:3.077cqw}.archive a svg{width:3.077cqw;height:3.077cqw;stroke-width:1.5}.archive dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:3.077cqw 0 0}.archive dl>div{position:relative;padding-left:3.077cqw}.archive dl>div:first-child{padding:0}.archive dl>div+div:before{content:'';position:absolute;left:0;top:0;height:6.667cqw;width:1px;background:#e6e6e6}.archive dt{font-size:3.077cqw;line-height:4.103cqw;font-weight:400;white-space:nowrap}.archive dd{font-size:3.077cqw;color:#888;line-height:4.103cqw;margin:1.026cqw 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.menu{margin:3.077cqw 5.128cqw 26cqw;background:#fff;border-radius:3.205cqw;padding:0 3.077cqw}.menu-row{display:flex;align-items:center;width:100%;height:15.513cqw;padding:0;background:none;text-align:left;gap:3.077cqw}.menu-row+.menu-row{border-top:1px solid #e6e6e6}.menu-row>svg:first-child{width:4.103cqw;height:4.103cqw;color:#e95039;flex-shrink:0;stroke-width:1.8}.menu-row>svg:last-child{width:3.59cqw;height:3.59cqw;margin-left:auto;flex-shrink:0;margin-right:.513cqw}.menu-row strong,.menu-row small{display:block;font-size:3.077cqw;font-weight:400;line-height:4.103cqw}.menu-row small{color:#888;margin-top:1.026cqw}.bottom-nav{padding-top:4.35cqw}.bottom-nav button{font-size:4.615cqw}.fixed-bottom{container-type:inline-size}dialog form{display:grid;gap:16px}dialog label{display:grid;gap:8px}dialog input,dialog textarea{width:100%;font:inherit;padding:12px;border:1px solid #ddd;border-radius:10px;background:#fff}dialog textarea{min-height:120px;resize:vertical}dialog a{color:#d15441}dialog h2{padding-right:20px}.form-status{margin:0;color:#888;font-size:14px}
+/* Match the inset navigation and the 482px menu card in Frame 16. */
+.bottom-nav{padding-left:4.103cqw;padding-right:4.103cqw}.menu-row{height:15.449cqw}
+
+/* Personal information dialog typography and fine-line close icon. */
+#panel-title,#identity-form .primary{font-family:'Chill Jinshu Song Text',serif;font-weight:500;font-synthesis:none;font-size:18px;line-height:1.5}
+#identity-form label,#identity-form input{font-size:12px;font-weight:400;line-height:1.5}
+#panel .close{width:36px;height:36px;padding:8px;display:flex;align-items:center;justify-content:center;color:#888}
+#panel .close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+/* Align the dialog title and corners with the personal-center cards. */
+#panel{border-radius:3.205cqw}
+#panel-title{color:#333333}
+/* Stronger section labels; signature matches menu descriptions. */
+.archive dt,.menu-row strong{font-weight:500}
+.identity p{font-size:3.077cqw}
+
+
+/* Center the editing content as a balanced block inside the dialog. */
+#panel:has(#identity-form){padding:40px 32px}
+#panel-content:has(#identity-form){width:100%;max-width:420px;margin-inline:auto;display:grid;gap:24px}
+#panel-content:has(#identity-form) #panel-title{margin:0;padding:0;text-align:left}
+#identity-form{margin:0;gap:20px}
+#identity-form .form-status:empty{display:none}
+#identity-form .primary{width:100%;margin:0;text-align:center}
+
+/* Avatar selection fits the existing personal-information form. */
+.avatar{overflow:hidden}.avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+
+/* Match the homepage navigation geometry exactly. */
+.me-page-placeholder{display:none}
