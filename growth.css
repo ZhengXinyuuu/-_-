@@ -40,7 +40,7 @@ body{height:100vh;overflow:hidden}
 .hero-sheen::before{left:-195px;background:linear-gradient(90deg,transparent,rgba(255,218,159,.1) 20%,rgba(255,238,204,.44) 50%,rgba(255,218,159,.1) 80%,transparent)}
 .hero-sheen::after{left:-115px;background:linear-gradient(90deg,transparent,rgba(255,242,216,.32) 48%,transparent)}
 .hero-exposure{position:absolute;left:24px;top:26px;width:150px;height:67px;pointer-events:none;z-index:2;overflow:hidden;border-radius:5px}
-.hero-exposure::before,.hero-exposure::after{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8.webp") -24px -26px/390px 294px no-repeat;filter:brightness(1.6) saturate(1.12);mask-image:linear-gradient(128deg,transparent 15%,#000 50%,transparent 85%);-webkit-mask-image:linear-gradient(128deg,transparent 15%,#000 50%,transparent 85%);mask-size:145px 100%;-webkit-mask-size:145px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-exposure 2800ms cubic-bezier(.22,.61,.36,1) 1 both}
+.hero-exposure::before,.hero-exposure::after{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8-fast.webp") -24px -26px/390px 294px no-repeat;filter:brightness(1.6) saturate(1.12);mask-image:linear-gradient(128deg,transparent 15%,#000 50%,transparent 85%);-webkit-mask-image:linear-gradient(128deg,transparent 15%,#000 50%,transparent 85%);mask-size:145px 100%;-webkit-mask-size:145px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-exposure 2800ms cubic-bezier(.22,.61,.36,1) 1 both}
 .hero-exposure::after{filter:brightness(1.35) saturate(1.08);mask-size:88px 100%;-webkit-mask-size:88px 100%;animation-delay:160ms}
 @keyframes membership-exposure{0%{mask-position:-210px 0;-webkit-mask-position:-210px 0;opacity:0}14%{opacity:.9}48%{opacity:.85}100%{mask-position:240px 0;-webkit-mask-position:240px 0;opacity:0}}
 @media(prefers-reduced-motion:reduce){.hero-exposure::before,.hero-exposure::after{animation:none;opacity:0}}
@@ -80,7 +80,7 @@ body{height:100vh;overflow:hidden}
 /* Staggered growth from a fixed baseline, followed by a small spring. */
 .hero>img.chart-base{mask:url(#membership-bars);-webkit-mask:url(#membership-bars)}
 .chart-bars{position:absolute;left:0;top:0;width:390px;height:294px;pointer-events:none}
-.chart-bars span{position:absolute;display:block;background-image:url("assets/growth-chart-svip8.webp");background-size:390px 294px;background-repeat:no-repeat;border-radius:8px 8px 0 0;transform-origin:center bottom;will-change:transform;animation:membership-bar-rise 850ms cubic-bezier(.22,.61,.36,1) both}
+.chart-bars span{position:absolute;display:block;background-image:url("assets/growth-chart-svip8-fast.webp");background-size:390px 294px;background-repeat:no-repeat;border-radius:8px 8px 0 0;transform-origin:center bottom;will-change:transform;animation:membership-bar-rise 850ms cubic-bezier(.22,.61,.36,1) both}
 @keyframes membership-bar-rise{0%{transform:scaleY(0)}65%{transform:scaleY(1.04)}82%{transform:scaleY(.985)}100%{transform:scaleY(1)}}
 @media(prefers-reduced-motion:reduce){.chart-bars span{animation:none}}
 .hero>img.chart-base{mask:none;-webkit-mask:none}
@@ -90,7 +90,7 @@ body{height:100vh;overflow:hidden}
 @keyframes membership-values-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.chart-values{animation:none}}
 /* Frame 135 is used unchanged; chart and membership content remain separate layers. */
-.hero{background:#30231a url("assets/growth-background-frame135.webp") left top/390px 348px no-repeat}
+.hero{background:#30231a url("assets/growth-background-frame135-fast.webp") left top/390px 348px no-repeat}
 .hero>img.chart-base{filter:url(#membership-ink);clip-path:inset(26px 216px 178px 24px);mask:none;-webkit-mask:none}
 .hero>img.chart-base{clip-path:inset(26px 216px 201px 24px)}
 .growth-speed{position:absolute;left:28px;top:100px;margin:0;color:#b3aaa0;font:12px/18px Arial,"Microsoft YaHei",sans-serif;pointer-events:none}
@@ -137,13 +137,13 @@ body{height:100vh;overflow:hidden}
 .hero-sheen,.hero-exposure{display:none}
 /* Highlight only the membership gem and title; the original artwork stays unfiltered. */
 .badge-shine{position:absolute;left:26px;top:30px;width:138px;height:22px;pointer-events:none;z-index:3;mix-blend-mode:screen}
-.badge-shine::before{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8.webp") -26px -30px/390px 294px no-repeat;filter:url(#membership-ink) brightness(1.65);mask-image:linear-gradient(110deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);-webkit-mask-image:linear-gradient(110deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);mask-size:45px 100%;-webkit-mask-size:45px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-badge-shine 1400ms ease-in-out 1280ms both}
+.badge-shine::before{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8-fast.webp") -26px -30px/390px 294px no-repeat;filter:url(#membership-ink) brightness(1.65);mask-image:linear-gradient(110deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);-webkit-mask-image:linear-gradient(110deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);mask-size:45px 100%;-webkit-mask-size:45px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-badge-shine 1400ms ease-in-out 1280ms both}
 @keyframes membership-badge-shine{0%{mask-position:-50px 0;-webkit-mask-position:-50px 0;opacity:0}15%{opacity:.9}75%{opacity:.9}100%{mask-position:145px 0;-webkit-mask-position:145px 0;opacity:0}}
 @media(prefers-reduced-motion:reduce){.badge-shine{display:none}}
 /* Left-leaning highlights synchronized across the badge and growth value. */
 .badge-shine::before,.growth-value-shine::before{mask-image:linear-gradient(70deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%);-webkit-mask-image:linear-gradient(70deg,transparent 10%,rgba(0,0,0,.3) 30%,#000 50%,rgba(0,0,0,.3) 70%,transparent 90%)}
 .growth-value-shine{position:absolute;left:26px;top:66px;width:138px;height:28px;pointer-events:none;z-index:3;mix-blend-mode:screen}
-.growth-value-shine::before{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8.webp") -26px -66px/390px 294px no-repeat;filter:url(#membership-ink) brightness(1.65);mask-size:45px 100%;-webkit-mask-size:45px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-badge-shine 1400ms ease-in-out 1280ms both}
+.growth-value-shine::before{content:"";position:absolute;inset:0;background:url("assets/growth-chart-svip8-fast.webp") -26px -66px/390px 294px no-repeat;filter:url(#membership-ink) brightness(1.65);mask-size:45px 100%;-webkit-mask-size:45px 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;animation:membership-badge-shine 1400ms ease-in-out 1280ms both}
 @media(prefers-reduced-motion:reduce){.growth-value-shine{display:none}}
 /* Faster stagger and a close handoff to the localized shimmer. */
 .chart-bars span{animation-duration:600ms}
@@ -166,3 +166,8 @@ body{height:100vh;overflow:hidden}
 .phone{width:390px;height:756px}
 .scroll-content{top:0}
 .privileges{color:#0101F7}
+/* Lightweight bars avoid repeated bitmap paints during the spring animation. */
+.chart-bars span{background-image:linear-gradient(to bottom,rgba(113,97,78,.58),rgba(63,49,39,.08));background-position:0 0!important;background-size:100% 100%}
+.chart-bars span:nth-child(7){background-image:linear-gradient(to bottom,#ffedc9,#a4947e 50%,rgba(79,65,51,.15))}
+.hero.is-loading .chart-bars span,.hero.is-loading .chart-values span,.hero.is-loading .badge-shine::before,.hero.is-loading .growth-value-shine::before{animation-play-state:paused}
+.chart-bars span{will-change:auto}
